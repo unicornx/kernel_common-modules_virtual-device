@@ -8,9 +8,8 @@ POST_DEFCONFIG_CMDS="rm ${ROOT_DIR}/${KERNEL_DIR}/arch/x86/configs/${DEFCONFIG} 
 DO_NOT_STRIP_MODULES=1
 function update_kprobes_config() {
     ${KERNEL_DIR}/scripts/config --file ${OUT_DIR}/.config \
-	 -d LTO \
 	 -d LTO_CLANG_THIN \
-	 -d CFI \
+	 -d LTO_CLANG_FULL \
 	 -d CFI_PERMISSIVE \
 	 -d CFI_CLANG \
 	 -e CONFIG_DYNAMIC_FTRACE \
