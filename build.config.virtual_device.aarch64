@@ -12,3 +12,4 @@ FILES="arch/arm64/boot/dts/arm/fvp-base-revc.dtb"
 MAKE_GOALS="modules arm/fvp-base-revc.dtb"
 
 KMI_SYMBOL_LIST=android/abi_gki_aarch64_virtual_device
+TRIM_NONLISTED_KMI=1
