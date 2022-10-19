@@ -20,7 +20,7 @@
 #error CONFIG_PCI is required
 #endif
 
-#if !defined(CONFIG_COMPAT) && !defined(CONFIG_COMPAT_32) && !defined(CONFIG_ARM)
+#if !defined(CONFIG_COMPAT) && !defined(CONFIG_COMPAT_32) && !defined(CONFIG_ARM) && !defined(CONFIG_RISCV)
 #error CONFIG_COMPAT or CONFIG_COMPAT_32 is required
 #endif
 
